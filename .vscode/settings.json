@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.html": "html",
+        "*.njk": "html",
+        "*.twig": "twig",
+        "*.py": "python",
+        "ostream": "cpp",
+        "cmath": "cpp",
+        "iostream": "cpp",
+        "new": "cpp",
+        "string": "cpp"
+    }
+}
