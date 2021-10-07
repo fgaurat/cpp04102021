@@ -9,6 +9,7 @@ Chaine::Chaine()
     cout<<"Chaine::Chaine()"<<endl;
     this->taille = 0;
     this->id = 0;
+    this->adr = NULL;
 }
 Chaine::Chaine(char *s,int id)
 {   
@@ -77,7 +78,9 @@ Chaine& Chaine::operator=(const Chaine &ch)
 
     if (this->adr != ch.adr)
     {   
-            delete this->adr;
+            if(this->adr != NULL)
+                delete this->adr;
+                
             this->taille = ch.taille;
             this->adr = new char[ch.taille];
             for (int i = 0; i < this->taille; i++)
@@ -87,7 +90,7 @@ Chaine& Chaine::operator=(const Chaine &ch)
     return *this;   
 }
 
-char Chaine::operator[](int i)
+char& Chaine::operator[](int i)
 {
     return this->adr[i];
 }

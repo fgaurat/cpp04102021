@@ -27,9 +27,14 @@ int main(void)
     //     cout << "ko" << endl;
     // }
 
-    // cout << c[0] << endl;
 
-    cout<<"---"<<endl;
-    c2 = c+c1;
-    cout<<"---"<<endl;
+    // cout<<"---"<<endl;
+    // c2 = c+c1;
+    // cout<<"---"<<endl;
+    cout << c[0] << endl;
+    c[0] = 'P';
+    char a = c[0];
+    c.affiche();
+    cout << endl;
+    cout << c[0] << endl;
 }

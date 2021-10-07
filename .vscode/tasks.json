@@ -6,6 +6,7 @@
 			"label": "Formation cpp C/C++: g++ générer le fichier actif",
 			"command": "/usr/bin/g++",
 			"args": [
+				"-std=c++11",
 				"-g",
 				"${fileDirname}/*.cpp",
 				"-o",

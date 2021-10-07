@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 #include "StackInt.h"
 
 using namespace std;
@@ -44,12 +45,15 @@ int StackInt::getCapacity()
 }
 
 void StackInt::append(int v)
-{
+{   
+
+    cout<<this->size << this->capacity<<endl;
     if (this->size < this->capacity)
     {
         this->stack[this->size] = v;
         this->size++;
     }
+    else throw out_of_range("out_of_range");
 }
 
 int StackInt::pop()
